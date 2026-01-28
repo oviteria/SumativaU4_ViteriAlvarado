@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diego Maradona | El Diez</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;500;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="header-content">
+            <div class="logo-square">D10S</div>
+            <div class="title-group">
+                <h1>Diego Maradona</h1>
+                <p>La Leyenda Eterna</p>
+            </div>
+        </div>
+        <nav>
+            <button class="btn-oval" onclick="showPage('home')">Inicio</button>
+        </nav>
+    </header>
+
+    <main id="view-container">
+        
+        <section id="home" class="view active">
+            <div class="layout-main">
+                <aside class="sidebar-ovals">
+                    <button class="oval-btn-small" onclick="showPage('bio')">📖</button>
+                    <button class="oval-btn-small" onclick="showPage('logros')">🏆</button>
+                    <button class="oval-btn-small">⚽</button>
+                    <button class="oval-btn-small">🇦🇷</button>
+                    <button class="oval-btn-small">🏟️</button>
+                    <button class="oval-btn-small">✉️</button>
+                </aside>
+
+                <div class="content-body">
+                    <div class="intro-text">
+                        <h2>Conecta con el Diez</h2>
+                        <p>Información clave y contacto para conocer más sobre la carrera y el presente de Diego.</p>
+                    </div>
+
+                    <div class="img-box-small center">
+                        <video src="invideo-ai-720 Maradona Moves_ 8s of Pure Magic 2026-01-21.mp4"></video>
+                      
+    
+                </div>
+                    
+                    
+
+                    <div class="home-info-grid">
+                        <div class="info-card" onclick="showPage('bio')">
+                            <h3>El camino del Pibe de Oro</h3>
+                            <p>Un recorrido por la vida, los sueños y la pasión inagotable de Diego, desde Fiorito para el mundo.</p>
+                        </div>
+                        <div class="info-card" onclick="showPage('logros')">
+                            <h3>Hitos de una leyenda</h3>
+                            <p>Un repaso por las hazañas, copas y momentos inolvidables que Diego ha regalado a la historia del fútbol.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="bio" class="view">
+            <h2 class="section-title">Diego Armando Maradona: Una vida dedicada a la pelota</h2>
+            
+            <div class="bio-flex">
+                <div class="bio-item">
+                    <div class="img-box-small"><img src="https://th.bing.com/th/id/OIP.Jg2jORLf9tc0cU3PNqpJbwHaE8?w=265&h=180&c=7&r=0&o=7&cb=defcache2&pid=1.7&rm=3&defcache=1" alt="Napoli"></div>
+                    <div class="text-content">
+                        <p>Diego no es solo un futbolista, es el símbolo máximo de cómo el talento y la perseverancia pueden llevar a un niño hasta la cima.</p>
+                    </div>
+                </div>
+
+                <div class="bio-item reverse">
+                    <div class="img-box-small"><img src="https://tse2.mm.bing.net/th/id/OIP.rT_8hXc_PYe_IwB2VauCUwHaE8?cb=defcache2defcache=1&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Boca"></div>
+                    <div class="text-content">
+                        <h3>Los inicios en Fiorito</h3>
+                        <p>Todo comenzó el 30 de octubre de 1960. Diego creció en Villa Fiorito, donde los lujos escaseaban pero los sueños sobraban.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-btns">
+                <button class="btn-oval">El Salto al Profesionalismo</button>
+                <button class="btn-oval">La Gloria Máxima</button>
+            </div>
+        </section>
+
+        <section id="logros" class="view">
+            <h2 class="section-title">Las grandes hazañas del 10</h2>
+            
+            <div class="img-banner-small">
+                <img src="https://th.bing.com/th/id/R.a14c8a086aa7d62a72e5765971afacbc?rik=wxmHiTYjoK0zEA&pid=ImgRaw&r=0" alt="World Cup">
+            </div>
+
+            <div class="achievements-list">
+                <div class="achieve-item">
+                    <h4>Copa del Mundo 1986</h4>
+                    <p>Lideró a la Selección Argentina hacia su segundo título mundial.</p>
+                </div>
+                <div class="img-circle-small"><img src="https://images.unsplash.com/photo-1522778119026-d647f0596c20?w=200" alt="Ball"></div>
+                <div class="achieve-item">
+                    <h4>El Gol del Siglo</h4>
+                    <p>La mezcla perfecta entre la astucia del potrero y la genialidad técnica.</p>
+                </div>
+            </div>
+
+            <footer class="legal-footer">
+                <p>Diego sigue siendo el referente máximo para cualquier persona que ama este deporte.</p>
+            </footer>
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,105 @@
+:root {
+    --primary: #003049;
+    --sky: #669bbc;
+    --gold: #c1121f; /* Rojo pasión para acentos */
+    --light: #fdf0d5;
+}
+
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    margin: 0;
+    background: #fff;
+    color: var(--primary);
+}
+
+/* Header elegante */
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 5%;
+    border-bottom: 1px solid #eee;
+}
+
+.logo-square {
+    width: 50px;
+    height: 50px;
+    border: 2px solid var(--primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 800;
+}
+
+/* Tamaños de Imagen Reducidos */
+.img-box-small {
+    width: 280px; /* Tamaño controlado */
+    height: 180px;
+    margin: 1rem auto;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+}
+
+.img-box-small img, .img-banner-small img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.img-banner-small {
+    width: 100%;
+    max-width: 600px;
+    height: 200px; /* Banner más bajo */
+    margin: 0 auto 2rem;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.img-circle-small {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid var(--sky);
+}
+
+/* Botones Óvalos */
+.btn-oval {
+    padding: 0.8rem 2rem;
+    border-radius: 50px;
+    border: 1.5px solid var(--primary);
+    background: transparent;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.btn-oval:hover { background: var(--primary); color: white; }
+
+.oval-btn-small {
+    width: 60px;
+    height: 45px;
+    border-radius: 20px;
+    border: 1px solid var(--primary);
+    background: #fff;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+/* Layouts */
+.view { display: none; padding: 3rem 10%; }
+.view.active { display: block; }
+
+.layout-main { display: flex; gap: 3rem; }
+.sidebar-ovals { display: flex; flex-direction: column; }
+
+.bio-item { display: flex; align-items: center; gap: 2rem; margin-bottom: 3rem; }
+.bio-item.reverse { flex-direction: row-reverse; }
+
+.achievements-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 1rem;
+    text-align: center;
+}
